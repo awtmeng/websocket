@@ -1,14 +1,12 @@
-websocket事件及方法：
-一、调度4个不同的事件：
-open、message、error、close
-可以用on<事件名>监听，也可以用addEventListener()
-
-open:协议握手完成
-message：接收到消息，接收文本，二进制类型，作为Blob或者ArrayBuffer消息处理
-error：错误
-close：连接关闭；readyState=2正在关闭；readyState=3已关闭；有3个属性wasClean（是否顺利关闭）、code、reason
-
 ## websocket 事件和方法
+### 一、调度4个不同的事件：
+> open、message、error、close<br/>
+> 可以用on<事件名>监听，也可以用addEventListener()<br/>
+
+> open:协议握手完成<br/>
+> message：接收到消息，接收文本，二进制类型，作为Blob或者ArrayBuffer消息处理<br/>
+> error：错误<br/>
+> close：连接关闭；readyState=2正在关闭；readyState=3已关闭；有3个属性wasClean（是否顺利关闭）、code、reason<br/>
 
 ### 二、两个方法
 #### 1）send（）：在onopen监听器之后，onclose监听器之前
